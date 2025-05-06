@@ -1,0 +1,166 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTech Hub - Online Store</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#guide">Buying Guide</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h1>Welcome to SmartTech Hub!</h1>
+        <p>Your one-stop shop for the latest smartphones. Explore cutting-edge technology with unbeatable prices.</p>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product">
+        <h2>Our Latest Smartphones</h2>
+        <table>
+            <tr>
+                <td><img src="phone1.jpg" alt="Smartphone 1"></td>
+                <td><img src="phone2.jpg" alt="Smartphone 2"></td>
+                <td><img src="phone3.jpg" alt="Smartphone 3"></td>
+            </tr>
+            <tr>
+                <td>Model X - $799</td>
+                <td>Model Y - $899</td>
+                <td>Model Z - $999</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Buying Guide Section -->
+    <section id="guide">
+        <h2>Buying Guide</h2>
+        <ul>
+            <li><img src="budget_icon.png" alt="Budget Icon"> Determine your budget.</li>
+            <li><img src="os_icon.png" alt="OS Icon"> Choose between Android or iOS.</li>
+            <li><img src="screen_icon.png" alt="Screen Icon"> Decide on screen size.</li>
+            <li><img src="battery_icon.png" alt="Battery Icon"> Consider battery life.</li>
+            <li><img src="camera_icon.png" alt="Camera Icon"> Look for a quality camera.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Call Us: <a href="tel:+60123456789">+60123456789</a></p>
+        <p>Email Us: <a href="mailto:info@smarttechhub.com">info@smarttechhub.com</a></p>
+        <iframe src="YOUR_GOOGLE_MAP_URL" width="600" height="400"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © SmartTech Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+#style
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: red;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.banner iframe {
+    width: 100%;
+    height: 400px;
+}
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#Script
+$(document).ready(function() {
+    $("nav ul li a").hover(function() {
+        $(this).css("color", "#ffcc00");
+    }, function() {
+        $(this).css("color", "white");
+    });
+});
+
+function validateForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if (name.trim() === "" || email.trim() === "") {
+        alert("Please fill in all fields.");
+        return false;
+    }
+
+    return true;
+}
