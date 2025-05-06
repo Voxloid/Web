@@ -1,0 +1,249 @@
+    <!-- Static Second ver -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Morning Bite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Product</a></li>
+            <li><a href="#testimony">Testimony</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home">
+        <h1>The Morning Bite</h1>
+        <p>"Delicious food for every mood"</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- About Us Page -->
+    <section id="about">
+        <h2>About Us</h2>
+        <img src="images/about.jpg" alt="About Us Image">
+        <p>We have been serving irresistible comfort food since 1999. Our mission is to keep you smiling with every bite.</p>
+        <p>Treat yourself to a feel-good meal today!</p>
+    </section>
+
+    <!-- Product Page -->
+    <section id="products">
+        <h2>What We Offer</h2>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Original Price</th>
+                <th>Discounted Price</th>
+            </tr>
+            <tr>
+                <td><img src="images/product1.jpg" alt="Product 1"> Product 1</td>
+                <td><s>RM 20.00</s></td>
+                <td>RM 15.00</td>
+            </tr>
+            <tr>
+                <td><img src="images/product2.jpg" alt="Product 2"> Product 2</td>
+                <td><s>RM 25.00</s></td>
+                <td>RM 19.00</td>
+            </tr>
+            <tr>
+                <td><img src="images/product3.jpg" alt="Product 3"> Product 3</td>
+                <td><s>RM 30.00</s></td>
+                <td>RM 24.00</td>
+            </tr>
+        </table>
+
+        <h2>Order Now</h2>
+        <form id="orderForm">
+            <label>Name: <input type="text" id="name" required></label>
+            <label>Contact No: <input type="text" id="contact" required></label>
+            <label>Email: <input type="email" id="email" required></label>
+            <label>Address: <input type="text" id="address" required></label>
+            <label>Product:
+                <select id="product">
+                    <option>Product A</option>
+                    <option>Product B</option>
+                    <option>Product C</option>
+                </select>
+            </label>
+            <label>Quantity: <input type="number" id="quantity" required></label>
+            <label>Delivery Date: <input type="date" id="deliveryDate" required></label>
+            <label>Notes (Optional): <textarea id="notes"></textarea></label>
+            <button type="submit">Submit Order</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </section>
+
+    <!-- Testimony Page -->
+    <section id="testimony">
+        <h2>What Our Clients Say</h2>
+        <p><strong>Johan, Indonesia:</strong> "It's the best of combination that makes you forget the world for a moment. And it's Malaysia's cultural food."</p>
+        <p><strong>Andrew Dunbar, USA:</strong> "Malaysia is a foodie's paradise. Dine at one of the ubiquitous hawker centers to get superb food at very affordable prices."</p>
+        <p><strong>Sathi, India:</strong> "Malaysia has the reputation as being a food paradise as it offers a diverse and exotic mix of Malay, Chinese, and Indian cuisine."</p>
+        <p><strong>Chris Walter, France:</strong> "I love Malaysian food, and it's my favorite thing about going to Malaysia."</p>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Opening Hours:</strong></p>
+        <p>Mon - Fri: 7am - 10pm | Saturday: 8am - 10pm | Sunday: 8am - 11pm</p>
+        <p><strong>Location:</strong> 123 Jalan 4, Taman Liklau</p>
+        <p><strong>Contact Details:</strong></p>
+        <p>Tel: 04-8689000 | Email: info@myemail.com</p>
+        <iframe src="YOUR_GOOGLE_MAP_URL" width="600" height="400"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Copyright 2025, The Morning Bite</p>
+    </footer>
+
+</body>
+</html>
+
+#Styles
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Section Styling */
+section {
+    margin: 80px auto 20px; /* To avoid overlap with fixed navbar */
+    padding: 20px;
+    max-width: 80%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table img {
+    width: 100px;
+    height: auto;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form input, form textarea, form select {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #ffcc00;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#script
+$(document).ready(function() {
+    $("#orderForm").submit(function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        let name = $("#name").val();
+        let email = $("#email").val();
+        let quantity = $("#quantity").val();
+
+        if (name.trim() === "" || email.trim() === "" || quantity.trim() === "") {
+            alert("Please fill in all required fields!");
+            return;
+        }
+
+        alert("Thank you for your order, " + name + "!");
+
+        $(this)[0].reset(); // Reset the form using jQuery
+    });
+
+    // Highlight fields on focus
+    $("input, textarea, select").focus(function() {
+        $(this).css("border", "2px solid #ffa500");
+    }).blur(function() {
+        $(this).css("border", "1px solid #ccc");
+    });
+});
+
