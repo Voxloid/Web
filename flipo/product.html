@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="product.html">Product</a>
+        <a href="testimony.html">Testimony</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section>
+        <h2>Our Products</h2>
+        <table>
+            <tr><th>Product</th><th>Original Price</th><th>Discounted Price</th></tr>
+            <tr><td>Product A</td><td><del>RM 20</del></td><td>RM 15</td></tr>
+            <tr><td>Product B</td><td><del>RM 25</del></td><td>RM 19</td></tr>
+            <tr><td>Product C</td><td><del>RM 30</del></td><td>RM 24</td></tr>
+        </table>
+
+        <form id="orderForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="tel" id="contact" placeholder="Contact No" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <select id="productSelect">
+                <option>Product A</option><option>Product B</option><option>Product C</option>
+            </select>
+            <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+            <input type="date" id="deliveryDate" required>
+            <textarea id="notes" placeholder="Notes (Optional)"></textarea>
+            <button type="submit">Submit Order</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025, The Morning Bite</p>
+    </footer>
+
+</body>
+</html>
