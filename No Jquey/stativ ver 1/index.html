@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTech Hub - Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#guide">Buying Guide</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="intro" transition="flip">
+        <h1>Welcome to SmartTech Hub!</h1>
+        <p>Your one-stop shop for the latest smartphones. Explore cutting-edge technology with unbeatable prices.</p>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" transition="flip">
+        <h2>Our Latest Smartphones</h2>
+        <table>
+            <tr>
+                <td><img src="phone1.jpg" alt="Smartphone 1"></td>
+                <td><img src="phone2.jpg" alt="Smartphone 2"></td>
+                <td><img src="phone3.jpg" alt="Smartphone 3"></td>
+            </tr>
+            <tr>
+                <td>Model X - $799</td>
+                <td>Model Y - $899</td>
+                <td>Model Z - $999</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Buying Guide Section -->
+    <section id="guide" transition="flip">
+        <h2>Buying Guide</h2>
+        <ul>
+            <li><img src="budget_icon.png" alt="Budget Icon"> Determine your budget.</li>
+            <li><img src="os_icon.png" alt="OS Icon"> Choose between Android or iOS.</li>
+            <li><img src="screen_icon.png" alt="Screen Icon"> Decide on screen size.</li>
+            <li><img src="battery_icon.png" alt="Battery Icon"> Consider battery life.</li>
+            <li><img src="camera_icon.png" alt="Camera Icon"> Look for a quality camera.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" transition="flip">
+        <h2>Contact Us</h2>
+        <form onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Call Us: <a href="tel:+60123456789">+60123456789</a></p>
+        <p>Email Us: <a href="mailto:info@smarttechhub.com">info@smarttechhub.com</a></p>
+        <iframe src="YOUR_GOOGLE_MAP_URL" width="600" height="400"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © SmartTech Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
